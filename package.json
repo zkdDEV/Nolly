@@ -1,0 +1,15 @@
+{
+  "name": "nolly",
+  "version": "1.0.0",
+  "description": "the future of societies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matheus Reichemback Stang - zkd",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.69.2"
+  }
+}
