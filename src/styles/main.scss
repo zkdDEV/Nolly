@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #2c3e50;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-bottom: 1px solid white;
+
+    h1{
+        height: 70px;
+
+        img{
+            height: 70px;
+        }
+    }
+
+    input{
+        padding: 8px 6px;
+        font-size: 16px;
+        border: none;
+        width: 300px;
+
+        &:focus{
+            outline-style: none;
+        }
+
+        &::-webkit-search-cancel-button{
+            appearance: none;
+        }
+    }
+
+    div{
+        text-align: center;
+
+        button{
+            padding: 12px 12px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 30px;
+            transition: all ease 0.3s;
+
+            &:hover{
+                transition: all ease 0.3s;
+                color: #2c3e50;
+                background-color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.conteudo
+{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    color: white;
+    height: calc(100vh - 94.8px);
+
+    aside{
+
+        @keyframes girar{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+
+        text-align: center;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        padding: 16px 0;
+
+        h2{
+            font-size: 32px;
+            padding-bottom: 12px;
+        }
+        
+        ul{
+            list-style: none;
+            margin-bottom: 230px;
+
+            li{
+                font-size: 18px;
+                font-weight: bold;
+                padding: 10px 0;
+                transition: all ease 0.1s;
+
+                &:hover{
+                    transition: all ease 0.3s;
+                    color: #2c3e50;
+                    background-color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        button{
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            align-items: center;
+            margin: 0 auto;
+            background-color: #2c3e50;
+            border: 1px solid white;
+            border-radius: 30px;
+            padding: 8px 6px;
+            cursor: pointer;
+            transition: all ease 0.3s;
+            width: 96%;
+            
+            &:hover{
+                transition: all ease 0.3s;
+                background-color: white;
+
+                p{
+                    color: #2c3e50;
+                }
+
+                div{
+                    background-image: url("../img/settings-dark_blue.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: all ease 0.3s;
+                    animation: girar 5s infinite linear;
+                    
+                    &:hover{
+                        transition: all ease 0.3s;
+                        background-color: #2c3e50;
+                        background-image: url("../img/settings-white.svg")
+                    }
+                }
+            }
+            img{
+                border-radius: 50%;
+                height: 45px;
+            }
+            
+            p{
+                color: white;
+                font-weight: bold;
+            }
+
+            div{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background: url("../img/settings-white.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: all ease 0.3s;
+            }
+
+        }
+    }
+
+    main{
+        padding-left: 16px;
+        padding-right: 16px;
+
+        a{
+            color: #4db8ff;
+
+            &:hover{
+                color: #2980b9;
+            }
+        }
+
+        h2{
+            font-size: 32px;
+            padding-top: 16px;
+            padding-bottom: 4px;
+        }
+
+        .agradecimento{
+            padding: 16px 0;
+
+            div{
+                text-align: center;
+                padding-bottom: 24px;
+
+                img{
+                    height: 160px;
+                }
+            }
+
+            p{
+                font-size: 16px;
+            }
+        }
+
+        .sobre{
+
+            div{
+                text-align: center;
+
+                h2{
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                }
+            }
+        }
+    }
+}
